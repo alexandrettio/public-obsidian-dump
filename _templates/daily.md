@@ -1,3 +1,7 @@
+---
+title: План на <% tp.file.title %>
+---
+
 ## 1. Деньги и финансы
 - [ ] 💰 Финансовая стабильность
 	- [ ] Оплатить обязательства
@@ -76,6 +80,7 @@
 
 ***
 Смотреть другие дни
+
 <%*
 const currentDate = moment(tp.file.title, "YYYY-MM-DD");
 const prevDate = currentDate.clone().subtract(1, "day").format("YYYY-MM-DD");
