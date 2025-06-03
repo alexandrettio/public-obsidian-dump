@@ -78,7 +78,14 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
+      Plugin.FolderPage({
+        folderIndexTitle: "Планы",
+        sort: (a, b) => {
+          const titleA = a.frontmatter.title?.toLowerCase() ?? ""
+          const titleB = b.frontmatter.title?.toLowerCase() ?? ""
+          return titleA.localeCompare(titleB)
+        },
+      }),
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,
