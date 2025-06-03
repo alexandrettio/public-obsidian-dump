@@ -79,7 +79,6 @@ const config: QuartzConfig = {
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
       Plugin.FolderPage({
-        folderIndexTitle: "Планы",
         sort: (a, b) => {
           const titleA = a.frontmatter.title?.toLowerCase() ?? ""
           const titleB = b.frontmatter.title?.toLowerCase() ?? ""
