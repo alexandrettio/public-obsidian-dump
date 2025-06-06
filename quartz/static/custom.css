@@ -1,0 +1,9 @@
+li.task-critical {
+  background-color: #ffcccc;
+}
+li.task-today {
+  background-color: #fff599;
+}
+li.task-later {
+  background-color: #caffbf;
+}
